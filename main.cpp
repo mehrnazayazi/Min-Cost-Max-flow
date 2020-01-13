@@ -3,12 +3,12 @@ using namespace std;
 
 
 int m, n;
-int Head[80200], Cost[80200];
+int Head[80200], Cost[80200], BackupCost[80200];
 int End[80200], Cap[80200];
 int Y[80200], Next[80200];
 int p[80200], l[80200];
 bool PathExists;
-int minCost = 0;
+int minCost = 0, flow=0;
 
 
 void Dijkstra(){
@@ -26,7 +26,7 @@ void Dijkstra(){
     int counter = 0;
     while(uncoloured_exist){
         counter++;
-        if(counter>m){
+        if(counter>2*m){
             PathExists = false;
             return;
         }
@@ -38,7 +38,7 @@ void Dijkstra(){
                 int neighbor = End[next];
                 if(uncoloured[neighbor]){
                     if(l[neighbor] > l[u]+ Cost[next]){
-                        l[neighbor] = p[u] + Cost[next];
+                        l[neighbor] = l[u] + Cost[next];
                         p[neighbor] = u;
                     }
                 }
@@ -50,6 +50,7 @@ void Dijkstra(){
             if(uncoloured[i]){
                 uncoloured_exist = true;
                 if(l[i] < min){
+                    min = l[i];
                     u = i;
                 }
             }
@@ -69,11 +70,13 @@ void AddEdge(int head, int end, int cost, int cap, int name){
     if( Y[head]== -1){
         Y[head] = name;
     }else{
-        next = Next[Y[head]];
+        int former = Y[head];
+        int next = Next[former];
         while(next!= -1){//TODO change it to get back to head;
-            next = Next[next];
+            former = next;
+            next = Next[former];
         }
-        Next[next] = name;
+        Next[former] = name;
     }
 }
 
@@ -96,22 +99,30 @@ int main()
     }
 
     for (int i = 0; i < m ; ++i) {
-        cin >> x >> y >> w, c;
+        cin >> x >> y >> c>> w;
         AddEdge(x, y, w, c, i);
-        AddEdge(y, x, w, 0, m+i);
+        AddEdge(y, x, -w, 0, m+i);
+    }
+    for (int k = 0; k < 2*m; ++k) {
+        BackupCost[k] = Cost[k];
     }
     PathExists = true;
     int pathCost = 0, minCap = 20000;
     while(PathExists){
+        int pathCost = 0;
         Dijkstra();
+        if(!PathExists){
+            break;
+        }
         int i = n-1;
+        minCap = 200000;
         while (i!=0){
-            for(int j=0;j<m;j++){
+            for(int j=0;j<2*m;j++){
                 if(End[j] == i && Head[j]==p[i]){
                     if(Cap[j] < minCap){
                         minCap = Cap[j];
                     }
-                    pathCost+=Cost[j];
+                    pathCost+=BackupCost[j];
                     break;
                 }
             }
@@ -127,14 +138,18 @@ int main()
                     Cap[j]+=minCap;
                 }
             }
+            i = p[i];
         }
         minCost+=(pathCost*minCap);
+        flow += minCap;
         for (int i = 0; i < 2*m; ++i) {
-            Cost[i] = Cost[i]+ l[Head[i]] - l[End[i]];
+                Cost[i] = Cost[i]+ l[Head[i]] - l[End[i]];
         }
     }
 
-    cout<< minCost;
+    cout<< "cost: "<<minCost<<endl;
+    cout.flush();
+    cout<<"flow: "<<flow;
     cout.flush();
 
 
