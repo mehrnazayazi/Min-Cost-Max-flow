@@ -12,9 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bed1b383-8524-4f1a-99ae-9586b5e880ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/min_cost_max_flow_v2_.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/min_cost_max_flow_v2_.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/min_cost_max_flow_v2_.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/min_cost_max_flow_v2_.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/min_cost_max_flow_v2_" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/min_cost_max_flow_v2_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578452059072</updated>
-      <workItem from="1578452060811" duration="15064000" />
+      <workItem from="1578452060811" duration="15716000" />
+      <workItem from="1578910230786" duration="6000" />
+      <workItem from="1578910244627" duration="8662000" />
     </task>
     <servers />
   </component>
@@ -78,60 +80,60 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1578884033954">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1578922412221">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578884033954" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1578884033953">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578922412221" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1578922412219">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578884033953" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1578884033952">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578922412219" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1578922412217">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578884033952" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1578884033954">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578922412217" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1578922412220">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578884033954" />
-    <state width="1398" height="272" key="GridCell.Tab.1.bottom" timestamp="1578883498436">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578922412220" />
+    <state width="1398" height="272" key="GridCell.Tab.1.bottom" timestamp="1578910205155">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="272" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578883498436" />
-    <state width="1398" height="272" key="GridCell.Tab.1.center" timestamp="1578883498434">
+    <state width="1398" height="272" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578910205155" />
+    <state width="1398" height="272" key="GridCell.Tab.1.center" timestamp="1578910205154">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="272" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1578883498434" />
-    <state width="1398" height="272" key="GridCell.Tab.1.left" timestamp="1578883498433">
+    <state width="1398" height="272" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1578910205154" />
+    <state width="1398" height="272" key="GridCell.Tab.1.left" timestamp="1578910205153">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="272" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1578883498433" />
-    <state width="1398" height="272" key="GridCell.Tab.1.right" timestamp="1578883498435">
+    <state width="1398" height="272" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1578910205153" />
+    <state width="1398" height="272" key="GridCell.Tab.1.right" timestamp="1578910205154">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="272" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1578883498435" />
+    <state width="1398" height="272" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1578910205154" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>108</line>
+          <line>114</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>119</line>
+          <line>133</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>131</line>
+          <line>149</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>110</line>
+          <line>116</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
